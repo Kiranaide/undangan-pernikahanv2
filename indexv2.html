@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lato: ["Lato", "sans-serif"],
+            pinyon: ["Pinyon Script", "cursive"],
+            kalam: ["Kalam", "cursive"]
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="m-0 p-0 font-lato font-normal bg-[#bbad9f] transition-all duration-1000">
+  <div class="max-w-lg max-h-screen mx-auto">
+    <div id="main" class="flex flex-col mx-auto">
+      <div
+        class="bg-[url(assets/aa.jpg)] h-screen w-full bg-cover bg-center flex flex-col items-center justify-between px-4 py-8">
+        <div class="flex flex-col items-center justify-center mt-12 gap-6 text-white" data-aos="fade-down"
+          data-aos-duration="1000">
+          <h3 class="text-xl">Undangan Pernikahan</h3>
+          <div class="text-center">
+            <h1 class="font-pinyon text-7xl">Nanda & Dini</h1>
+            <p class="text-2xl">24 . 02 . 2024</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center mb-12 text-white" data-aos="fade-down"
+          data-aos-duration="1000" data-aos-delay="300">
+          <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">Kepada Yth.</p>
+          <p data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">Bapak / Ibu / Saudara/i</p>
+          <h1 class="font-kalam text-5xl" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">Ujang dan
+            Keluarga</h1>
+          <button type="button" id="buttonUndangan" class="my-4 p-2 rounded-lg cursor-pointer bg-white text-black"
+            data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="550" onclick="scrollMainPage()">
+            Buka Undangan
+          </button>
+        </div>
+      </div>
+      <div class="h-screen w-full bg-[#f8f4ed] flex flex-col items-center justify-between overflow-hidden"
+        id="mainPage">
+        <div class="flex flex-col items-center justify-center h-screen w-full text-[#928d89] gap-8 relative px-4 py-8 ">
+          <img src="assets/bg2.jpg" class="absolute inset-0 opacity-5 w-full h-screen">
+          <div class="flex flex-col gap-4 text-center">
+            <img src="assets/aa.jpg" alt="" class="h-2/3 w-auto rounded-b-full" data-aos="fade-down"
+              data-aos-duration="1000">
+            <div>
+              <h4 class="font-normal text-5xl font-pinyon" data-aos="fade-down" data-aos-delay="300"
+                data-aos-duration="1000">Assalamualaikum
+                Warahmatullahi Wabarakatuh</h4>
+              <p class="text-lg" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">Tanpa mengurangi
+                rasa hormat, kami
+                bermaksud mengundang Bapak / Ibu / Saudara/i pada
+                acara resepsi pernikahan kami</p>
+            </div>
+          </div>
+          <img src="/assets/bunga2.webp" class="absolute -top-14 -right-12 z-10 w-64 h-64 rotate-180" />
+        </div>
+      </div>
+      <div class="h-screen w-full bg-[#f8f4ed] flex flex-col items-center justify-between px-4 py-8 overflow-hidden">
+        <div class="flex flex-col items-center justify-between h-screen w-full my-3 text-[#928d89] gap-8 relative">
+          <div class="w-full h-full my-2 flex flex-col justify-evenly gap-8 z-20">
+            <div class="flex flex-row-reverse items-center justify-end gap-8 w-full">
+              <div class="flex flex-col gap-1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+                <h4 class="font-normal text-5xl font-pinyon">Nanda Hartianto</h4>
+                <p class="text-sm">Anak ketiga dari</p>
+                <h3 class="text-lg">Bapak Asep</h3>
+              </div>
+              <div class="w-48 h-48 rounded-full relative" data-aos="fade-right" data-aos-duration="1000">
+                <img src="assets/cc.png" alt="" class="w-48 h-48 rounded-full z-20 relative" />
+                <img src="assets/flower.webp" alt=""
+                  class="w-48 h-48 rounded-full absolute inset-0 scale-125 z-10 opacity-50" />
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-end gap-8 w-full">
+              <div class="flex flex-col gap-1 text-end" data-aos="fade-left" data-aos-duration="1000"
+                data-aos-delay="300">
+                <h4 class="font-normal text-5xl font-pinyon">Dini Saputri</h4>
+                <p class="text-sm">Anak pertama dari</p>
+                <h3 class="text-lg">Ibu Romlah</h3>
+              </div>
+              <div class="w-48 h-48 rounded-full relative" data-aos="fade-left" data-aos-duration="1000">
+                <img src="assets/bb.png" alt="" class="w-48 h-48 rounded-full z-20 relative" />
+                <img src="assets/flower.webp" alt=""
+                  class="w-48 h-48 rounded-full absolute inset-0 scale-125 z-10 opacity-50" />
+              </div>
+            </div>
+          </div>
+          <img src="/assets/bunga2.webp" class="absolute -bottom-14 -left-12 z-10 w-64 h-64" />
+          <img src="/assets/bunga2.webp" class="absolute -top-14 -right-12 z-10 w-64 h-64 rotate-180" />
+        </div>
+      </div>
+      <div
+        class="min-h-screen w-full bg-[#fff3de] flex flex-col items-center justify-center px-4 py-8 overflow-hidden relative">
+        <img src="assets/bg.jpg" class="absolute inset-0 opacity-15 w-full h-full">
+        <div class="flex flex-col items-center justify-around h-screen w-full my-3 text-[#928d89] gap-8 relative">
+          <div class="flex items-center justify-evenly flex-col">
+            <div class="flex flex-col items-center justify-center mt-12 gap-2">
+              <h3 class="text-5xl font-pinyon" data-aos="fade-down" data-aos-duration="1000">Akad Nikah</h3>
+              <div class="text-center text-[#575554] text-lg" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-delay="300">
+                <p>Jumat, 23 Februari 2024</p>
+                <p>Pukul 10:00 WIB - Selesai</p>
+                <p>Bertempatan di</p>
+                <p>Masjid Nurul Yaqin Muhammadiyah</p>
+                <p>Jl. Dr. Sutomo No.140A, Kubu Marapalam, Kota Padang, Sumatera Barat</p>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center mt-12 gap-2">
+              <h3 class="text-5xl font-pinyon" data-aos="fade-down" data-aos-duration="1000">Resepsi</h3>
+              <div class="text-center text-[#575554] text-lg" data-aos="fade-down" data-aos-duration="1000"
+                data-aos-delay="300">
+                <p>Sabtu, 24 Februari 2024</p>
+                <p>Pukul 10:00 WIB - Selesai</p>
+                <p>Bertempatan di</p>
+                <p>Mediatama Web</p>
+                <p>Jl. Dr. Sutomo No.146, Kubu Marapalam, Kota Padang, Sumatera Barat</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-8 w-full">
+            <div class="flex flex-row items-center justify-around w-full" data-aos="fade-down" data-aos-duration="1000">
+              <p id="hari" class="text-xl bg-[#ffbb83] p-4 text-white rounded-lg text-center"></p>
+              <p id="jam" class="text-xl bg-[#ffbb83] p-4 text-white rounded-lg text-center"></p>
+              <p id="menit" class="text-xl bg-[#ffbb83] p-4 text-white rounded-lg text-center"></p>
+              <p id="detik" class="text-xl bg-[#ffbb83] p-4 text-white rounded-lg text-center"></p>
+            </div>
+            <a href="" class="text-xl p-4 rounded-lg bg-[#ffbb83] text-white" data-aos="fade-down"
+              data-aos-duration="1000">Save to Calendar</a>
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-full bg-[#f8f4ed] flex flex-col items-center justify-between m-0 overflow-hidden">
+        <div class="flex flex-col items-center h-full w-full text-[#928d89] relative">
+          <div class="p-4">
+            <img src="assets/header-flower.webp" class="mb-2" data-aos="zoom-in" data-aos-duration="1000" />
+            <h1 class="font-pinyon text-5xl text-center mb-4" data-aos="fade-down" data-aos-duration="1000">
+              Momen Yang Berharga
+            </h1>
+            <p class="text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="250">
+              Menciptakan kenangan adalah hadiah yang tak ternilai harganya.
+              Kenangan akan bertahan seumur hidup; benda-benda hanya dalam
+              waktu singkat.
+            </p>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <img src="assets/koleksi/1.jpeg" data-aos="fade-right" data-aos-duration="1000" />
+            <img src="assets/koleksi/6.jpeg" data-aos="fade-left" data-aos-duration="1000" />
+            <img src="assets/koleksi/2.jpeg" data-aos="fade-right" data-aos-duration="1000" />
+            <img src="assets/koleksi/3.jpeg" data-aos="fade-left" data-aos-duration="1000" />
+            <img src="assets/koleksi/7.jpeg" data-aos="fade-right" data-aos-duration="1000" />
+            <img src="assets/koleksi/4.jpeg" data-aos="fade-left" data-aos-duration="1000" />
+            <img src="assets/koleksi/5.jpeg" data-aos="fade-right" data-aos-duration="1000" />
+            <img src="assets/koleksi/1.jpeg" data-aos="fade-left" data-aos-duration="1000" />
+          </div>
+        </div>
+      </div>
+      <div class="h-full w-full bg-[#f8f4ed] flex flex-col items-center justify-between py-8 px-4 overflow-hidden">
+        <div class="flex flex-col items-center h-full w-full text-[#928d89] relative gap-4 mb-32">
+          <h1 class="font-pinyon text-5xl text-center my-6" data-aos="fade-down" data-aos-duration="1000">
+            Datang dan Saksikanlah
+          </h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.7643648028623!2d100.38928221886191!3d-0.9527413548401638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b90bd1a8788f%3A0x90288b7bbe595a1a!2sMediatama%20Web!5e0!3m2!1sen!2sid!4v1706331495371!5m2!1sen!2sid"
+            allowfullscreen="" loading="lazy" class="w-full h-96" referrerpolicy="no-referrer-when-downgrade"
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300"></iframe>
+          <p class="text-xl text-center" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000">Jl. Dr.
+            Sutomo No.146, Kubu Marapalam, Kota Padang, Sumatera Barat</p>
+          <a href="https://maps.app.goo.gl/T8YgrN6wbJKTaice9" class="text-xl p-4 rounded-lg bg-[#ffbb83] text-white"
+            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="450">Petunjuk ke Lokasi</a>
+        </div>
+      </div>
+      <div class="fixed max-w-lg w-screen p-4 z-50" id="tombolAudio">
+        <audio id="bgmAudio" loop>
+          <source src="/assets/bgm.mp3" />
+        </audio>
+        <button type="button" id="audioButton"
+          class="audio-button flex items-center justify-center bg-[hsl(43,3%,60%)] p-2 rounded-full w-8 h-8">
+          <svg class="play-icon w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="b.js"></script>
+</body>
+
+</html>

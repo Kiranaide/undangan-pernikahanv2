@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link
+      rel="stylesheet"
+      href="style.css" /> -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              lato: ["Lato", "sans-serif"],
+              pinyon: ["Pinyon Script", "cursive"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pinyon+Script&display=swap");
+      *::-webkit-scrollbar {
+        display: none;
+      }
+      * {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="m-0 p-0 font-lato font-normal">
+    <div class="max-w-lg max-h-screen mx-auto">
+      <div class="home">
+        <div
+          class="bg-[url(assets/aa.jpg)] h-screen bg-cover bg-center flex items-center justify-center"
+          id="cover">
+          <div
+            class="flex items-center justify-between flex-col gap-1 bg-black/30 rounded-lg py-24 text-center w-full h-full shadow-md text-white"
+            id="greeting">
+            <div class="gap-2">
+              <h2
+                class=""
+                data-aos="fade-down"
+                data-aos-duration="1500">
+                Undangan Pernikahan
+              </h2>
+              <h1
+                class="font-pinyon text-5xl"
+                data-aos="fade-down"
+                data-aos-duration="1250">
+                Nanda & Dini
+              </h1>
+              <p
+                class="mb-4"
+                data-aos="fade-down"
+                data-aos-duration="1000">
+                Anda diundang untuk hadir dalam acara pernikahan kami.
+              </p>
+            </div>
+            <button
+              type="button"
+              id="open-main"
+              class="p-2 rounded-lg cursor-pointer bg-white text-black"
+              data-aos="zoom-in"
+              data-aos-duration="10000">
+              Buka Undangan
+            </button>
+          </div>
+        </div>
+        <div
+          id="main"
+          class="hidden max-w-lg w-screen flex-col">
+          <div
+            class="bg-[url(assets/aa.jpg)] h-screen w-full bg-cover bg-center flex flex-col items-center justify-between px-4 py-8">
+            <div
+              class="flex flex-col items-center justify-center mt-12 gap-6 text-white"
+              data-aos="fade-down">
+              <h3 class="text-lg">Undangan Pernikahan</h3>
+              <h1 class="font-pinyon text-7xl">N&D</h1>
+              <div class="text-center">
+                <h1 class="font-pinyon text-4xl">Nanda & Dini</h1>
+                <p>24 . 02 . 2024</p>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center mb-12 text-white">
+              <p>Dalam</p>
+              <p
+                id="time"
+                class="text-xl"></p>
+            </div>
+          </div>
+          <div
+            class="h-screen w-full bg-[#f8f4ed] flex flex-col items-center justify-between px-4 py-8">
+            <div
+              class="flex flex-col items-center justify-between h-full w-full my-3 text-[#928d89] gap-8 relative">
+              <h1 class="font-pinyon text-7xl">Nanda</h1>
+              <div class="w-full my-2 flex flex-col gap-8 z-20">
+                <div
+                  class="flex flex-row-reverse items-center justify-end gap-8 w-full">
+                  <div class="flex flex-col gap-1">
+                    <h4 class="font-semibold text-xl">Nanda Hartianto</h4>
+                    <p class="text-xs">Anak ketiga dari</p>
+                    <h3 class="text-lg">Bapak Asep</h3>
+                  </div>
+                  <div class="w-48 h-48 rounded-full relative">
+                    <img
+                      src="assets/cc.png"
+                      alt=""
+                      class="w-48 h-48 rounded-full z-20 relative" />
+                    <img
+                      src="assets/flower.webp"
+                      alt=""
+                      class="w-48 h-48 rounded-full absolute inset-0 scale-125 z-10 opacity-50" />
+                  </div>
+                </div>
+                <div
+                  class="flex flex-row items-center justify-end gap-8 w-full">
+                  <div class="flex flex-col gap-1 text-end">
+                    <h4 class="font-semibold text-xl">Dini Saputri</h4>
+                    <p class="text-xs">Anak pertama dari</p>
+                    <h3 class="text-lg">Ibu Romlah</h3>
+                  </div>
+                  <div class="w-48 h-48 rounded-full relative">
+                    <img
+                      src="assets/bb.png"
+                      alt=""
+                      class="w-48 h-48 rounded-full z-20 relative" />
+                    <img
+                      src="assets/flower.webp"
+                      alt=""
+                      class="w-48 h-48 rounded-full absolute inset-0 scale-125 z-10 opacity-50" />
+                  </div>
+                </div>
+              </div>
+              <h1 class="font-pinyon text-7xl">Dini</h1>
+              <img
+                src="/assets/bunga2.webp"
+                class="absolute -bottom-14 -left-8 z-10 w-64 h-64" />
+              <img
+                src="/assets/bunga2.webp"
+                class="absolute -top-14 -right-12 z-10 w-64 h-64 rotate-180" />
+            </div>
+          </div>
+          <div
+            class="h-full w-full bg-[#f8f4ed] flex flex-col items-center justify-between m-0">
+            <div
+              class="flex flex-col items-center h-full w-full text-[#928d89] relative">
+              <div class="p-4">
+                <img
+                  src="assets/header-flower.webp"
+                  class="mb-2" />
+                <h1
+                  class="font-pinyon text-5xl text-center mb-4"
+                  data-aos="fade-down">
+                  Momen Yang Berharga
+                </h1>
+                <p class="text-center">
+                  Menciptakan kenangan adalah hadiah yang tak ternilai harganya.
+                  Kenangan akan bertahan seumur hidup; benda-benda hanya dalam
+                  waktu singkat.
+                </p>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <img src="assets/koleksi/1.jpeg" />
+                <img src="assets/koleksi/6.jpeg" />
+                <img src="assets/koleksi/2.jpeg" />
+                <img src="assets/koleksi/3.jpeg" />
+                <img src="assets/koleksi/7.jpeg" />
+                <img src="assets/koleksi/4.jpeg" />
+                <img src="assets/koleksi/5.jpeg" />
+                <img src="assets/koleksi/1.jpeg" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="h-full w-full bg-[#f8f4ed] flex flex-col items-center justify-between m-0 px-4 py-8">
+            <div
+              class="flex flex-col items-center h-full w-full text-[#928d89] relative">
+              <h1 class="font-pinyon text-5xl text-center mb-4">
+                Datang dan Saksikanlah
+              </h1>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d399.7643648028623!2d100.38928221886191!3d-0.9527413548401638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b90bd1a8788f%3A0x90288b7bbe595a1a!2sMediatama%20Web!5e0!3m2!1sen!2sid!4v1706331495371!5m2!1sen!2sid"
+                allowfullscreen=""
+                loading="lazy"
+                class="w-full h-64"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="fixed max-w-lg w-screen p-4 z-50">
+            <audio
+              id="bgmAudio"
+              loop>
+              <source src="/assets/bgm.mp3" />
+            </audio>
+            <button
+              type="button"
+              id="audioButton"
+              class="audio-button flex items-center justify-center bg-[hsl(43,3%,60%)] p-2 rounded-full w-8 h-8">
+              <svg
+                class="play-icon w-6 h-6 text-white"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="a.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
